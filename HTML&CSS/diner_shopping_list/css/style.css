@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Trebuchet;
+  src        : url('Trebuchet.ttf')
+}
+
+* {
+  transition: all .1s ease-in;
+}
+
+html,
+body {
+  margin    : 0px;
+  padding   : 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #3B3F45;
+  font-family     : 'Trebuchet', sans-serif;
+  font-size       : 18px;
+  display         : flex;
+  flex-direction  : column;
+  height          : 100vh;
+}
+
+header {
+  background-color: #4A4F56;
+  color           : #E87D7F;
+  text-align      : center;
+}
+
+main {
+  display        : flex;
+  justify-content: center;
+}
+
+section {
+  width: 600px;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-size: 14px;
+  color    : #c7c6c6;
+
+}
+
+span::before {
+  content: '( ';
+}
+
+span::after {
+  content: ' )';
+}
+
+ul {
+  list-style: none;
+  padding   : 0px;
+}
+
+li {
+  background-color: #88839E;
+  color           : #ffffff;
+  padding         : 10px;
+}
+
+li:nth-of-type(even) {
+  background-color: #7A7593;
+}
+
+li:hover {
+  display         : block;
+  box-sizing      : border-box;
+  background-color: #625E77;
+  border-top      : 3px solid #ffffff;
+  border-bottom   : 3px solid #ffffff;
+}
+
+li:active {
+  background-color: #E87D7F;
+}
+
+input:checked+* {
+  text-decoration: line-through;
+  color          : #dddddd;
+}
+
+input[type="button"] {
+  font-size       : 16px;
+  background-color: #4A4F56;
+  color           : #E87D7F;
+  border          : none;
+  width           : 100%;
+  padding         : 20px;
+}
