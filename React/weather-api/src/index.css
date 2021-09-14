@@ -1,0 +1,138 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family     : Courier, monospace, sans-serif;
+  background-color: #262626;
+}
+
+.app {
+  top                : 50%;
+  left               : 50%;
+  position           : absolute;
+  transform          : translate(-50%, -50%);
+  background-image   : url(./bg/cold.jpg);
+  background-size    : cover;
+  background-position: bottom;
+  transition         : 0.4s ease-out;
+  border-radius      : 15px;
+
+}
+
+.app.warm {
+  background-image: url(./bg/warm.jpg);
+}
+
+main {
+  height          : 90vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+  padding         : 20px;
+  border-radius   : 15px;
+}
+
+.search-box {
+  margin: 0 0 25px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width  : 100%;
+  padding: 10px;
+
+  background: none;
+  border    : none;
+  outline   : none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius   : 0 0 15px 15px;
+  margin-top      : -20px;
+
+  box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+
+  color    : #313131;
+  font-size: 20px;
+
+  transition: 0.4 ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box,
+.location,
+.date {
+  color      : #fff;
+  font-size  : 32px;
+  font-weight: 900;
+  text-align : center;
+}
+
+.date {
+  font-size  : 18px;
+  font-weight: 700;
+  font-style : italic;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.temp {
+  display         : inline-block;
+  margin          : 10px auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius   : 15px;
+  padding         : 10px 20px;
+  color           : #fff;
+  font-size       : 82px;
+  font-weight     : 900;
+  text-align      : center;
+  box-shadow      : 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.feels,
+.weather {
+  color      : #fff;
+  font-size  : 28px;
+  font-weight: 700;
+}
+
+.feels {
+  font-style   : italic;
+  font-size    : 16px;
+  margin-bottom: 20px;
+}
+
+.other-params {
+  margin-top     : 20px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  flex-direction : column;
+  border         : 3px solid rgba(255, 255, 255, 0.5);
+  padding        : 5%;
+  border-radius  : 15px;
+  color          : #fff;
+}
+
+.humidity,
+.min-max {
+  font-size    : 18px;
+  font-weight  : 700;
+  margin-bottom: 20px;
+}
+
+.location-box,
+.location,
+.date,
+.temp,
+.feels,
+.weather,
+.humidity,
+.min-max {
+  text-shadow: 3px 3px rgba(40, 40, 60, 0.9);
+}
