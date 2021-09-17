@@ -1,0 +1,259 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+body {
+  color           : #fff;
+  font-family     : Courier, monospace, sans-serif;
+  background-color: #262626;
+
+}
+
+main {
+  min-height      : 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  padding         : 25px;
+}
+
+.app {
+  max-width          : 1920px;
+  margin             : 0 auto;
+  background-image   : url('./image/photo-1517999144091-3d9dca6d1e43.jfif');
+  background-size    : cover;
+  background-position: bottom;
+  transition         : 0.4s ease-out;
+}
+
+.dva {
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+  margin         : 10px;
+}
+
+.logo {
+  width : 20px;
+  height: 20px;
+}
+
+.title-app {
+  margin-left: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size  : 15px;
+  color      : #313131;
+}
+
+.search-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow      : 2px 4px rgba(255, 195, 66, 0.55);
+  padding         : 2%;
+  border-radius   : 15px;
+}
+
+.search-bar {
+  display: block;
+  width  : 100%;
+  padding: 15px;
+
+  background: none;
+  border    : none;
+  outline   : none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius   : 15px;
+
+  color    : #313131;
+  font-size: 20px;
+
+  transition: 0.4 ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.NoMovie {
+  font-size  : 28px;
+  margin-top : 30px;
+  color      : #fff;
+  text-shadow: 1px 2px rgba(255, 195, 66, 0.55);
+}
+
+.about-film {
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
+  justify-content: space-evenly;
+  align-items    : center;
+}
+
+.film-info {
+  max-width       : 280px;
+  display         : flex;
+  justify-content : center;
+  flex-direction  : column;
+  background-color: rgba(125, 125, 125, 0.3);
+  margin          : 10px;
+  padding         : 10px;
+  border-radius   : 15px;
+  color           : #fff;
+  text-shadow     : 1px 2px rgba(255, 195, 66, 0.55);
+  box-shadow      : 2px 4px rgba(255, 195, 66, 0.55);
+  cursor          : pointer;
+}
+
+.poster {
+  height       : 362px;
+  object-fit   : cover;
+  border-radius: 15px;
+}
+
+
+.title-film {
+  border-radius: 15px;
+  color        : #fff;
+  font-size    : 18 px;
+  font-weight  : 800;
+  margin       : 10px;
+  text-align   : center;
+  text-shadow  : 2px 2px rgba(255, 195, 66, 0.55);
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+  overflow     : hidden;
+}
+
+.year_type {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items    : center;
+  font-size      : 14px;
+  margin         : 5px;
+}
+
+
+.btn {
+  width           : 100px;
+  height          : 40px;
+  margin          : 20px;
+  color           : #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-shadow     : 1px 2px rgba(255, 195, 66, 0.55);
+  box-shadow      : 1px 3px rgba(255, 195, 66, 0.55);
+  cursor          : pointer;
+  border-radius   : 15px;
+  border          : none;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn:active {
+  background-color: rgba(255, 195, 66, 0.55);
+}
+
+/* ======================================================================================*/
+/* =============================     MOVIE DESCRIPTION     ==============================*/
+/* ======================================================================================*/
+.film-container {
+  margin         : 20px;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.film::before,
+.film::after {
+  content         : '';
+  display         : block;
+  width           : 100%;
+  height          : 2px;
+  background-color: rgba(125, 125, 125, 0.3);
+  margin-top      : 20px;
+  margin-bottom   : 20px;
+}
+
+.posterFilm {
+  padding         : 2%;
+  border-radius   : 15px;
+  background-color: rgba(125, 125, 125, 0.3);
+  box-shadow      : 2px 4px rgba(255, 195, 66, 0.55);
+}
+
+.desc {
+  margin     : 20px;
+  text-shadow: 1px 2px rgba(255, 195, 66, 0.55);
+}
+
+.desc div:nth-child(even) {
+  margin: 10px 0;
+}
+
+.TT {
+  display    : flex;
+  align-items: center;
+}
+
+.Title {
+  font-size  : 30px;
+  font-weight: 900;
+}
+
+.Type {
+  text-transform: uppercase;
+  margin-right  : 15px;
+}
+
+.year-info,
+.runtime-info,
+.production-info,
+.genre-info,
+.released-info,
+.imdbRating-info,
+.boxOffice-info {
+  display    : flex;
+  align-items: center;
+}
+
+.Year-body,
+.Runtime-body,
+.Production-body,
+.Genre-body,
+.Released-body,
+.imdbRating-body,
+.BoxOffice-body,
+.Plot-body {
+  font-weight: 700;
+}
+
+.Year,
+.Runtime,
+.Production,
+.Genre,
+.Released,
+.imdbRating,
+.BoxOffice,
+.Plot {
+  margin-right: 15px;
+}
+
+.Plot-body {
+  font-style: italic;
+}
+
+.close {
+  font-size       : 28px;
+  color           : #000;
+  background-color: rgba(125, 125, 125, 0.3);
+  border-radius   : 5px;
+  padding         : 4px;
+  align-self      : flex-start;
+  cursor          : pointer;
+}
+
+.close:hover {
+  background-color: rgba(255, 195, 66, 0.55);
+}
